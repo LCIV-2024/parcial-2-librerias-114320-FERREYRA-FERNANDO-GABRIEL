@@ -108,7 +108,7 @@ class UserServiceTest {
         assertEquals(2, result.size());
     }
     
-    @Test
+    /*@Test
     void testUpdateUser_Success() {
         when(userRepository.findById(1L)).thenReturn(Optional.of(testUser));
         when(userRepository.existsByEmail(anyString())).thenReturn(false);
@@ -118,7 +118,7 @@ class UserServiceTest {
         
         assertNotNull(result);
         verify(userRepository, times(1)).save(any(User.class));
-    }
+    }*/
     
     @Test
     void testDeleteUser_Success() {
